@@ -1,6 +1,6 @@
 # CowinPy
 
-We all now hwo difficult it is to find a slot on CoWin Website. If you are not alert and quick, you might miss you chance!
+We all know how difficult it is to find a slot on CoWin Website. If you are not alert and quick, you might miss you chance!
 This small prototype has helped me and my friend book vaccination slots in nearby area as soon as they open up.
 
 Just a few steps for initialization and you are good to go!
