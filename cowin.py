@@ -10,6 +10,7 @@ centre_det = []
 #Edit this variable with the nearby pincodes
 MY_PINCODE = [400608,400708,421308,400607,400602,400606,400605,400601,400710,400709,400602,400603,400703,400604]
 TWILIO_PHONE_NUMBER = "YOUR-TWILIO-PHONE-NUMBER"
+DISTRICT_CODE = 395
 
 # list of one or more phone numbers to dial, in "+19732644210" format
 DIAL_NUMBERS = ["+91123456789"]
@@ -42,8 +43,8 @@ while(True):
     tod_date = datetime.datetime.today().strftime('%d/%m/%Y')
 
 #FETCH RESPONSE FROM COWIN FOR THANE AND TOMORROW'S DATE
-    responses = requests.get("https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=392&date={0}".format(tod_date))
-    responses2 = requests.get("https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=392&date={0}".format(tom_date))
+    responses = requests.get("https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id={0}&date={1}".format(DISTRICT_CODE,tod_date))
+    responses2 = requests.get("https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id={0}&date={1}".format(DISTRICT_CODE,tom_date))
     #print(responses.json())
 
 #SAVE RESPONSES IN A JSON FILE
