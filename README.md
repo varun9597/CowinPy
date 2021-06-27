@@ -36,6 +36,7 @@ You have now setup your phone number from which you will receive calls as soon a
 ## EDIT CODE
 
 1. Edit the MY_PINCODE variable with the nearby pincodes where vaccination drive is happening. These pincodes will be used to check if any slot is available on CoWin.
+2. Edit the DISTRICT_CODE varible using the district_mapping.csv file.
 
 ### NOTE -  The current code works for - DOSE 1 for 18+ Citizen and once you get the call, you will have to register using the Cowin App
 #### PS. It took 1 hour to develop this code, and I was vaccinated within the next 12 hours.
